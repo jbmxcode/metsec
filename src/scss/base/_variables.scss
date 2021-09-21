@@ -1,0 +1,39 @@
+$vp-small               : 20rem; // 320px;
+$vp-mid                 : 48rem; // 768px;
+$vp-large               : 64rem; // 1024px;
+$vp-xlarge              : 80rem; // 1280px;
+$vp-max                 : 84.375rem; // 1350px;
+$site-width             : 100rem; // 1600px;
+
+$height-topbar          : 2.5rem;
+$height-branding        : 7.375rem;
+$height-menu            : 3.125rem;
+
+$primary-color          : rgb(0, 130, 180);
+$secondary-color        : rgb(51, 154, 195);
+$tertiary-color         : rgb(0, 102, 141);
+$fourth-color           : rgb(84, 192, 235);
+$grey                   : rgb(102, 102, 102);
+$grey-light             : rgb(221, 221, 221);
+
+$base-font-size         : 16px;
+$primary-font           : 'voestalpine', sans-serif;
+
+:root {
+    --vp-small          : #{$vp-small};
+    --vp-mid            : #{$vp-mid};
+    --vp-large          : #{$vp-large};
+    --vp-xlarge         : #{$vp-xlarge};
+    --vp-max            : #{$vp-max};
+    --site-width        : #{$site-width};
+
+    --primary-color     : #{$primary-color};
+    --secondary-color   : #{$secondary-color};
+    --tertiary-color    : #{$tertiary-color};
+    --fourth-color      : #{$fourth-color};
+    --grey              : #{$grey};
+    --grey-light        : #{$grey-light};
+
+    --base-font-size    : #{$base-font-size};
+    --primary-font      : #{$primary-font};
+}

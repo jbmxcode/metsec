@@ -1,0 +1,120 @@
+.site-header {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    .site-header__inner {
+        display: flex;
+        flex-direction: column;        
+        padding: 0 1.25rem;
+        background-color: white;
+
+        [class$="__inner"] {
+            max-width: $site-width;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        @include respond-to($vp-large) {
+            padding: 0;
+        }
+    }
+
+    .site-branding {
+        @include respond-to($vp-large) {
+            display: flex;
+            align-items: center;
+            order: 2;
+            height: $height-branding;
+        }
+
+        .site-branding__inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-logo__voestalpine {
+            flex: 1;
+
+            a svg { width: 80%; }
+
+            @include respond-to($vp-large) {
+                flex: none;
+                
+                a svg { width: 15.3125rem; }
+            }
+        }
+
+        .site-logo__metsec {
+            flex: 1; 
+
+            a { 
+                display: flex;
+                flex-direction: column;
+                color: $grey;
+
+                svg { 
+                    width: 51%; 
+                    margin-left: auto;
+                }
+            }
+
+            .text { 
+                display: none;
+                margin-top: .25rem; 
+            }
+
+            @include respond-to($vp-large) {
+                flex: none;
+                
+                a { 
+                    align-items: flex-end; 
+
+                    svg { 
+                        width: 9.8125rem; 
+                        margin: 0; 
+                    }
+                }
+
+                .text { display: block; }
+            }
+        }
+    }
+
+    .topbar {
+        border-bottom: 1.5px solid $grey-light;
+
+        .topbar__inner {
+            height: 100%;
+        }
+        
+        @include respond-to($vp-large) {
+            order: 1;
+            display: flex;
+            align-items: center;
+            height: $height-topbar;
+
+            .topbar__inner {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .topbar-mobile {
+        @include respond-to($vp-large) {
+            display: none !important;
+        }
+    }
+
+    .topbar-desktop {
+        display: none;
+
+        @include respond-to($vp-large) {
+            display: block;
+        }
+    }
+}
