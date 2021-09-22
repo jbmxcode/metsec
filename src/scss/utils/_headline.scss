@@ -11,3 +11,20 @@
     line-height: 2.0625rem;
     color: $grey;
 }
+
+.section-header {
+    max-width: 44.75rem;
+    width: 100%;
+    margin-bottom: 2rem;
+
+    h1, h2 { margin: 0; }
+    
+    p {
+        font: {
+            size: 1.125rem;
+            weight: 300;
+        }
+        line-height: 2;
+        color: $grey;
+    }
+}

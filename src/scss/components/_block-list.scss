@@ -1,5 +1,22 @@
-.product-features {
+.section-block-list {
     padding: 4rem 0;
+
+    &.img-inline {
+        .item-image {
+            @include mask-fullsize { background: linear-gradient(254.34deg, rgba(51, 154, 195, 0.8) 12.43%, rgba(0, 102, 141, 0.8) 86.09%); }
+
+            svg, img {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: 2;
+                width: 130px;
+                height: auto;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
 
     .items-list {
         display: grid;
@@ -48,6 +65,7 @@
     }
 
     .item-image {
+        @include bg-cover;
         margin: 0;
         padding: 0;
         width: 100%;
