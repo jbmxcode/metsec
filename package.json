@@ -1,8 +1,8 @@
 {
-  "name": "thatsclever",
+  "name": "metsec",
   "version": "1.0.0",
   "description": "Redesign",
-  "homepage": "https://thatsclever.co.uk",
+  "homepage": "https://metsec2021.test",
   "browserslist": [
     "last 2 versions",
     "> 5%"
@@ -54,7 +54,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:jbmxworld/thatsclever-static.git"
+    "url": "git@github.com:jbmxworld/metsec.git"
   },
   "scripts": {
     "test": "http-server src",
