@@ -1,0 +1,110 @@
+.tabs {
+    &-list {
+        @include stripped-list;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            margin: 0 1rem 1rem 0;
+
+            a {
+                display: block;
+                padding: .5rem 1rem;
+                font-size: 0.875rem;
+                text: {
+                    decoration: none;
+                    transform: uppercase;
+                }
+                border-radius: 5px;
+                color: $primary-color;
+                background-color: $grey-light;
+                overflow: hidden;
+
+                @include sweep-to-right(.5s, $primary-color);
+
+                &.active {
+                    color: white;
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }
+
+    &-panels {
+        .panel {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 3rem;
+            padding: 3rem 0;
+        }
+
+        .item {
+            display: grid;
+            grid-template-columns: 18.125rem 1fr;
+            border: 2px solid $grey-light;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .item-image {
+            margin: 0;
+            padding: 0;
+            
+            img {
+                display: block;
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+
+        .item-summary {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 2rem;
+
+            .category {
+                display: block;
+                margin-bottom: 1.25rem;
+                font: {
+                    size: 0.875rem;
+                    weight: 300;
+                }
+                text-transform: uppercase;
+                color: $grey-mid;
+            }
+
+            h4 {
+                margin: 0;
+                font: {
+                    size: 1.625rem;
+                    weight: 400;
+                }
+            }
+
+            p {
+                margin-bottom: 2.5rem;
+                font: {
+                    size: 1.125rem;
+                    weight: 300;
+                }
+                line-height: 2;
+                color: $grey;
+            }
+
+            a {
+                font: {
+                    size: 1.125rem;
+                    weight: 500;
+                }
+                text: {
+                    decoration: none;
+                    transform: uppercase;
+                }
+                color: $primary-color;
+
+                @include underline-from-left($border-size: 1px);
+            }
+        }
+    }
+}

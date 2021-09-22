@@ -623,7 +623,7 @@
 	$bg-color: $primary-color,
 	$text-color: $color-over-primary,
 	$hover-bg: $secondary-color,
-	$hover-text: $color-over-secondary,
+	$hover-text: white,
 	$descriptor: null
 ) {
 	@include hacks;
@@ -684,7 +684,7 @@
 @mixin bounce-to-bottom(
 	$duration: 0.5s,
 	$hover-bg: $secondary-color,
-	$hover-text: $color-over-secondary,
+	$hover-text: white,
 	$descriptor: null
 ) {
 	@include bg-bounce-base($duration, $hover-bg, $hover-text, $descriptor);
@@ -705,7 +705,7 @@
 @mixin bounce-to-left(
 	$duration: 0.5s,
 	$hover-bg: $secondary-color,
-	$hover-text: $color-over-secondary,
+	$hover-text: white,
 	$descriptor: null
 ) {
 	@include bg-bounce-base($duration, $hover-bg, $hover-text, $descriptor);
@@ -726,7 +726,7 @@
 @mixin bounce-to-right(
 	$duration: 0.5s,
 	$hover-bg: $secondary-color,
-	$hover-text: $color-over-secondary,
+	$hover-text: white,
 	$descriptor: null
 ) {
 	@include bg-bounce-base($duration, $hover-bg, $hover-text, $descriptor);
@@ -747,7 +747,7 @@
 @mixin bounce-to-top(
 	$duration: 0.5s,
 	$hover-bg: $secondary-color,
-	$hover-text: $color-over-secondary,
+	$hover-text: white,
 	$descriptor: null
 ) {
 	@include bg-bounce-base($duration, $hover-bg, $hover-text, $descriptor);
@@ -765,7 +765,7 @@
 }
 
 // Fade
-@mixin fade($duration: 0.3s, $hover-bg: $secondary-color, $hover-text: $color-over-secondary, $descriptor: null) {
+@mixin fade($duration: 0.3s, $hover-bg: $secondary-color, $hover-text: white, $descriptor: null) {
 	@include hacks;
 	overflow: hidden;
 	transition: {
@@ -782,7 +782,7 @@
 	$bg-color: $primary-color,
 	$text-color: $color-over-primary,
 	$hover-bg: $secondary-color,
-	$hover-text: $color-over-secondary,
+	$hover-text: white,
 	$descriptor: null
 ) {
 	@include bg-base($duration, $bg-color, $text-color, $descriptor);
@@ -803,7 +803,7 @@
 }
 
 // Radial Out
-@mixin radial-out($duration: 0.3s, $hover-bg: $secondary-color, $hover-text: $color-over-secondary, $descriptor: null) {
+@mixin radial-out($duration: 0.3s, $hover-bg: $secondary-color, $hover-text: white, $descriptor: null) {
 	@include bg-base($duration, $hover-bg, $hover-text, $descriptor);
 	overflow: hidden;
 
@@ -825,7 +825,7 @@
 	$bg-color: $primary-color,
 	$text-color: $color-over-primary,
 	$hover-bg: $secondary-color,
-	$hover-text: $color-over-secondary,
+	$hover-text: white,
 	$descriptor: null
 ) {
 	@include bg-base($duration, $bg-color, $text-color, $descriptor);
@@ -847,7 +847,7 @@
 @mixin rectangle-out(
 	$duration: 0.3s,
 	$hover-bg: $secondary-color,
-	$hover-text: $color-over-secondary,
+	$hover-text: white,
 	$descriptor: null
 ) {
 	@include bg-base($duration, $hover-bg, $hover-text, $descriptor);
@@ -869,7 +869,7 @@
 	$bg-color: $primary-color,
 	$text-color: $color-over-primary,
 	$hover-bg: $secondary-color,
-	$hover-text: $color-over-secondary,
+	$hover-text: white,
 	$descriptor: null
 ) {
 	@include bg-base($duration, $bg-color, $hover-text, $descriptor);
@@ -893,7 +893,7 @@
 	$bg-color: $primary-color,
 	$text-color: $color-over-primary,
 	$hover-bg: $secondary-color,
-	$hover-text: $color-over-secondary,
+	$hover-text: white,
 	$descriptor: null
 ) {
 	@include bg-base($duration, $bg-color, $hover-text, $descriptor);
@@ -915,7 +915,7 @@
 @mixin shutter-out-horizontal(
 	$duration: 0.3s,
 	$hover-bg: $secondary-color,
-	$hover-text: $color-over-secondary,
+	$hover-text: white,
 	$descriptor: null
 ) {
 	@include bg-base($duration, $hover-bg, $hover-text, $descriptor);
@@ -935,7 +935,7 @@
 @mixin shutter-out-vertical(
 	$duration: 0.3s,
 	$hover-bg: $secondary-color,
-	$hover-text: $color-over-secondary,
+	$hover-text: white,
 	$descriptor: null
 ) {
 	@include bg-base($duration, $hover-bg, $hover-text, $descriptor);
@@ -955,7 +955,7 @@
 @mixin sweep-to-top(
 	$duration: 0.3s,
 	$hover-bg: $secondary-color,
-	$hover-text: $color-over-secondary,
+	$hover-text: white,
 	$descriptor: null
 ) {
 	@include bg-base($duration, $hover-bg, $hover-text, $descriptor);
@@ -976,7 +976,7 @@
 @mixin sweep-to-bottom(
 	$duration: 0.3s,
 	$hover-bg: $secondary-color,
-	$hover-text: $color-over-secondary,
+	$hover-text: white,
 	$descriptor: null
 ) {
 	@include bg-base($duration, $hover-bg, $hover-text, $descriptor);
@@ -997,7 +997,7 @@
 @mixin sweep-to-left(
 	$duration: 0.3s,
 	$hover-bg: $secondary-color,
-	$hover-text: $color-over-secondary,
+	$hover-text: white,
 	$descriptor: null
 ) {
 	@include bg-base($duration, $hover-bg, $hover-text, $descriptor);
@@ -1018,7 +1018,7 @@
 @mixin sweep-to-right(
 	$duration: 0.3s,
 	$hover-bg: $secondary-color,
-	$hover-text: $color-over-secondary,
+	$hover-text: white,
 	$descriptor: null
 ) {
 	@include bg-base($duration, $hover-bg, $hover-text, $descriptor);

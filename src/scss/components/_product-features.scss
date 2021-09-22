@@ -4,12 +4,13 @@
     .items-list {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(min(500px, 100%), 1fr));
-        grid-gap: 2.0625rem 2rem;
+        grid-gap: 1.75rem;
     }
 
     .item {
-        border: 2px solid #F2F2F2;
+        border: 2px solid $grey-light;
         border-radius: 5px;
+        overflow: hidden;
     }
 
     .item-summary {
@@ -24,7 +25,7 @@
 
         > * { margin: 0; }
 
-        .text { 
+        p { 
             max-width: 270px;
             margin: 1rem 0; 
             line-height: 1.625rem;

@@ -1,0 +1,30 @@
+.form-search {
+    display: grid;
+    grid-template-columns: 1fr 3.125rem;
+    max-width: 44.75rem;
+    width: 100%;
+
+    input[type="search"] {
+        display: block;
+        height: 3.125rem;
+        padding: .875rem;
+        border: 0;
+        border-radius: 5px 0 0 5px;
+        background-color: $grey-light;
+    }
+
+    .btn-search {
+        display: block;
+        height: 3.125rem;
+        border: 0;
+        border-radius: 0 5px 5px 0;
+        background: {
+            color: $primary-color;
+            image: url(../images/icons/icon-magnifying-glass.svg);
+            repeat: no-repeat;
+            position: center;
+            size: 60%;
+        }
+        cursor: pointer;
+    }
+}
