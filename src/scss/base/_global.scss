@@ -40,7 +40,7 @@ a {
 .sr-only { @include hidden; }
 
 .h-scroll {
-    @include respond-to-max(1023px) {
+    @media screen and (min-width: 1023px) {
         display: flex !important;
         overflow-x: scroll;
         width: 100vw;
