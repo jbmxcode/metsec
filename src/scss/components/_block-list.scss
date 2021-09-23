@@ -1,5 +1,10 @@
 .section-block-list {
-    padding: 4rem 0;
+    overflow: hidden;
+    padding: 1rem 0;
+
+    @include respond-to($vp-large) {
+        padding: 4rem 0;
+    }
 
     &.img-inline {
         .item-image {
@@ -21,13 +26,23 @@
     .items-list {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(min(500px, 100%), 1fr));
-        grid-gap: 1.75rem;
+
+        @include respond-to($vp-large) {
+            width: 100%;
+            grid-gap: 1.75rem;
+            overflow: visible;
+        }
     }
 
     .item {
+        flex: none;
         border: 2px solid $grey-light;
         border-radius: 5px;
         overflow: hidden;
+
+        @include respond-to($vp-large) {
+            width: 100%;
+        }
     }
 
     .item-summary {
@@ -58,7 +73,7 @@
                 transform: uppercase;
                 decoration: none;
             }
-            color: $tertiary-color;
+            color: $primary-color;
 
             @include underline-from-left($border-size: 1px);
         }
@@ -69,7 +84,7 @@
         margin: 0;
         padding: 0;
         width: 100%;
-        height: 13.125rem;
+        height: 8.125rem;
 
         img {
             display: block;
@@ -77,6 +92,10 @@
             max-width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        @include respond-to($vp-large) {
+            height: 13.125rem;
         }
     }
 }

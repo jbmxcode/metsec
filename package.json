@@ -47,6 +47,7 @@
     "autoprefixer": "^10.3.1",
     "http-server": "^0.12.3",
     "postcss-import": "^14.0.2",
+    "shufflejs": "^5.4.1",
     "swiper": "^6.8.1"
   },
   "engines": {

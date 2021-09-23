@@ -1,12 +1,12 @@
 .second-headline {
-    @include scale-font($small-ratio: .5, $mid-ratio: .75, $final-size: 2.25rem);
+    @include scale-font($small-ratio: .65, $mid-ratio: .75, $final-size: 2.25rem);
     font-weight: 300;
     line-height: 2.5rem;
     color: $primary-color;
 }
 
 .third-headline {
-    @include scale-font($small-ratio: .5, $mid-ratio: .75, $final-size: 1.625rem);
+    @include scale-font($small-ratio: .7, $mid-ratio: .75, $final-size: 1.625rem);
     font-weight: 400;
     line-height: 2.0625rem;
     color: $grey;
@@ -15,7 +15,7 @@
 .section-header {
     max-width: 44.75rem;
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     h1, h2 { margin: 0; }
     
@@ -26,5 +26,9 @@
         }
         line-height: 2;
         color: $grey;
+    }
+
+    @include respond-to($vp-large) {
+        margin-bottom: 2rem;
     }
 }

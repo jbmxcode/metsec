@@ -16,6 +16,11 @@ body {
     font-family: $primary-font;
 }
 
+a { 
+    color: inherit; 
+    transition: all .3s;
+}
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -34,7 +39,17 @@ body {
 
 .sr-only { @include hidden; }
 
-a { 
-    color: inherit; 
-    transition: all .3s;
+.h-scroll {
+    @include respond-to-max(1023px) {
+        display: flex !important;
+        overflow-x: scroll;
+        width: 100vw;
+        padding: 0 0 1rem;
+
+        > * { 
+            flex: none;
+            width: 246px;
+            margin-right: 1.75rem; 
+        }
+    }
 }
